@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CCEB33D24D605CE00DBDE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB33C24D605CE00DBDE1B /* AppDelegate.swift */; };
+		3CCEB33F24D605CF00DBDE1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB33E24D605CF00DBDE1B /* SceneDelegate.swift */; };
+		3CCEB34124D605CF00DBDE1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB34024D605CF00DBDE1B /* ViewController.swift */; };
+		3CCEB34424D605CF00DBDE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEB34224D605CF00DBDE1B /* Main.storyboard */; };
+		3CCEB34624D605D900DBDE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEB34524D605D900DBDE1B /* Assets.xcassets */; };
+		3CCEB34924D605D900DBDE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEB34724D605D900DBDE1B /* LaunchScreen.storyboard */; };
+		3CCEB35424D605DA00DBDE1B /* Happy_TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB35324D605DA00DBDE1B /* Happy_TapTests.swift */; };
+		3CCEB35F24D605DA00DBDE1B /* Happy_TapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB35E24D605DA00DBDE1B /* Happy_TapUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CCEB35024D605DA00DBDE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CCEB33124D605CE00DBDE1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCEB33824D605CE00DBDE1B;
+			remoteInfo = "Happy Tap";
+		};
+		3CCEB35B24D605DA00DBDE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CCEB33124D605CE00DBDE1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCEB33824D605CE00DBDE1B;
+			remoteInfo = "Happy Tap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CCEB33924D605CE00DBDE1B /* Happy Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCEB33C24D605CE00DBDE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CCEB33E24D605CF00DBDE1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CCEB34024D605CF00DBDE1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CCEB34324D605CF00DBDE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CCEB34524D605D900DBDE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CCEB34824D605D900DBDE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CCEB34A24D605D900DBDE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCEB34F24D605DA00DBDE1B /* Happy TapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy TapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCEB35324D605DA00DBDE1B /* Happy_TapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_TapTests.swift; sourceTree = "<group>"; };
+		3CCEB35524D605DA00DBDE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCEB35A24D605DA00DBDE1B /* Happy TapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy TapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCEB35E24D605DA00DBDE1B /* Happy_TapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_TapUITests.swift; sourceTree = "<group>"; };
+		3CCEB36024D605DA00DBDE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CCEB33624D605CE00DBDE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB34C24D605DA00DBDE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB35724D605DA00DBDE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CCEB33024D605CD00DBDE1B = {
+			isa = PBXGroup;
+			children = (
+				3CCEB33B24D605CE00DBDE1B /* Happy Tap */,
+				3CCEB35224D605DA00DBDE1B /* Happy TapTests */,
+				3CCEB35D24D605DA00DBDE1B /* Happy TapUITests */,
+				3CCEB33A24D605CE00DBDE1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CCEB33A24D605CE00DBDE1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEB33924D605CE00DBDE1B /* Happy Tap.app */,
+				3CCEB34F24D605DA00DBDE1B /* Happy TapTests.xctest */,
+				3CCEB35A24D605DA00DBDE1B /* Happy TapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CCEB33B24D605CE00DBDE1B /* Happy Tap */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEB33C24D605CE00DBDE1B /* AppDelegate.swift */,
+				3CCEB33E24D605CF00DBDE1B /* SceneDelegate.swift */,
+				3CCEB34024D605CF00DBDE1B /* ViewController.swift */,
+				3CCEB34224D605CF00DBDE1B /* Main.storyboard */,
+				3CCEB34524D605D900DBDE1B /* Assets.xcassets */,
+				3CCEB34724D605D900DBDE1B /* LaunchScreen.storyboard */,
+				3CCEB34A24D605D900DBDE1B /* Info.plist */,
+			);
+			path = "Happy Tap";
+			sourceTree = "<group>";
+		};
+		3CCEB35224D605DA00DBDE1B /* Happy TapTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEB35324D605DA00DBDE1B /* Happy_TapTests.swift */,
+				3CCEB35524D605DA00DBDE1B /* Info.plist */,
+			);
+			path = "Happy TapTests";
+			sourceTree = "<group>";
+		};
+		3CCEB35D24D605DA00DBDE1B /* Happy TapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEB35E24D605DA00DBDE1B /* Happy_TapUITests.swift */,
+				3CCEB36024D605DA00DBDE1B /* Info.plist */,
+			);
+			path = "Happy TapUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CCEB33824D605CE00DBDE1B /* Happy Tap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCEB36324D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy Tap" */;
+			buildPhases = (
+				3CCEB33524D605CE00DBDE1B /* Sources */,
+				3CCEB33624D605CE00DBDE1B /* Frameworks */,
+				3CCEB33724D605CE00DBDE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Tap";
+			productName = "Happy Tap";
+			productReference = 3CCEB33924D605CE00DBDE1B /* Happy Tap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CCEB34E24D605DA00DBDE1B /* Happy TapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCEB36624D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy TapTests" */;
+			buildPhases = (
+				3CCEB34B24D605DA00DBDE1B /* Sources */,
+				3CCEB34C24D605DA00DBDE1B /* Frameworks */,
+				3CCEB34D24D605DA00DBDE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCEB35124D605DA00DBDE1B /* PBXTargetDependency */,
+			);
+			name = "Happy TapTests";
+			productName = "Happy TapTests";
+			productReference = 3CCEB34F24D605DA00DBDE1B /* Happy TapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CCEB35924D605DA00DBDE1B /* Happy TapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCEB36924D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy TapUITests" */;
+			buildPhases = (
+				3CCEB35624D605DA00DBDE1B /* Sources */,
+				3CCEB35724D605DA00DBDE1B /* Frameworks */,
+				3CCEB35824D605DA00DBDE1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCEB35C24D605DA00DBDE1B /* PBXTargetDependency */,
+			);
+			name = "Happy TapUITests";
+			productName = "Happy TapUITests";
+			productReference = 3CCEB35A24D605DA00DBDE1B /* Happy TapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CCEB33124D605CE00DBDE1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Mairin Jarvis Castellano";
+				TargetAttributes = {
+					3CCEB33824D605CE00DBDE1B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					3CCEB34E24D605DA00DBDE1B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3CCEB33824D605CE00DBDE1B;
+					};
+					3CCEB35924D605DA00DBDE1B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3CCEB33824D605CE00DBDE1B;
+					};
+				};
+			};
+			buildConfigurationList = 3CCEB33424D605CE00DBDE1B /* Build configuration list for PBXProject "Happy Tap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CCEB33024D605CD00DBDE1B;
+			productRefGroup = 3CCEB33A24D605CE00DBDE1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CCEB33824D605CE00DBDE1B /* Happy Tap */,
+				3CCEB34E24D605DA00DBDE1B /* Happy TapTests */,
+				3CCEB35924D605DA00DBDE1B /* Happy TapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CCEB33724D605CE00DBDE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCEB34924D605D900DBDE1B /* LaunchScreen.storyboard in Resources */,
+				3CCEB34624D605D900DBDE1B /* Assets.xcassets in Resources */,
+				3CCEB34424D605CF00DBDE1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB34D24D605DA00DBDE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB35824D605DA00DBDE1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CCEB33524D605CE00DBDE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCEB34124D605CF00DBDE1B /* ViewController.swift in Sources */,
+				3CCEB33D24D605CE00DBDE1B /* AppDelegate.swift in Sources */,
+				3CCEB33F24D605CF00DBDE1B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB34B24D605DA00DBDE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCEB35424D605DA00DBDE1B /* Happy_TapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCEB35624D605DA00DBDE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCEB35F24D605DA00DBDE1B /* Happy_TapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CCEB35124D605DA00DBDE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCEB33824D605CE00DBDE1B /* Happy Tap */;
+			targetProxy = 3CCEB35024D605DA00DBDE1B /* PBXContainerItemProxy */;
+		};
+		3CCEB35C24D605DA00DBDE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCEB33824D605CE00DBDE1B /* Happy Tap */;
+			targetProxy = 3CCEB35B24D605DA00DBDE1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CCEB34224D605CF00DBDE1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCEB34324D605CF00DBDE1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CCEB34724D605D900DBDE1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCEB34824D605D900DBDE1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CCEB36124D605DA00DBDE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CCEB36224D605DA00DBDE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CCEB36424D605DA00DBDE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy Tap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-Tap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CCEB36524D605DA00DBDE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy Tap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-Tap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CCEB36724D605DA00DBDE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy TapTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-TapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Tap.app/Happy Tap";
+			};
+			name = Debug;
+		};
+		3CCEB36824D605DA00DBDE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy TapTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-TapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Tap.app/Happy Tap";
+			};
+			name = Release;
+		};
+		3CCEB36A24D605DA00DBDE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy TapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-TapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Happy Tap";
+			};
+			name = Debug;
+		};
+		3CCEB36B24D605DA00DBDE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Happy TapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HappycapyM.Happy-TapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Happy Tap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CCEB33424D605CE00DBDE1B /* Build configuration list for PBXProject "Happy Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCEB36124D605DA00DBDE1B /* Debug */,
+				3CCEB36224D605DA00DBDE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCEB36324D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCEB36424D605DA00DBDE1B /* Debug */,
+				3CCEB36524D605DA00DBDE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCEB36624D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy TapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCEB36724D605DA00DBDE1B /* Debug */,
+				3CCEB36824D605DA00DBDE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCEB36924D605DA00DBDE1B /* Build configuration list for PBXNativeTarget "Happy TapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCEB36A24D605DA00DBDE1B /* Debug */,
+				3CCEB36B24D605DA00DBDE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CCEB33124D605CE00DBDE1B /* Project object */;
+}

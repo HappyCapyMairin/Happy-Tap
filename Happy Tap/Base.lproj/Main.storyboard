@@ -96,47 +96,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-xQ-MDz">
-                                <rect key="frame" x="-12" y="109" width="439" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-xQ-MDz">
+                                <rect key="frame" x="13.5" y="109" width="387.5" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="387.5" id="Wwc-3T-dQJ"/>
+                                    <constraint firstAttribute="height" constant="64" id="mfc-cu-Uhu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="40"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJu-gW-BXe">
-                                <rect key="frame" x="92" y="246" width="245" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJu-gW-BXe">
+                                <rect key="frame" x="84.5" y="246" width="245" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="9Cl-fj-aLs"/>
+                                    <constraint firstAttribute="width" constant="245" id="e0Q-ab-MUr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
                                     <segue destination="c5N-TZ-V7Y" kind="show" id="ZwM-OV-mDw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-zo-BZc">
-                                <rect key="frame" x="113" y="354" width="199" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-zo-BZc">
+                                <rect key="frame" x="107.5" y="354" width="199" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="nxV-Nm-pRG"/>
+                                    <constraint firstAttribute="height" constant="37" id="ofB-7g-1BK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <state key="normal" title="Level 2: Normal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-cw-cDw">
-                                <rect key="frame" x="121" y="399" width="187" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-cw-cDw">
+                                <rect key="frame" x="124" y="399" width="166" height="59"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="fpc-cg-aoB"/>
+                                    <constraint firstAttribute="width" constant="166" id="nGG-uU-fnY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <state key="normal" title="Level 3: Hard"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-EF-A6R">
-                                <rect key="frame" x="131" y="300" width="164" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-EF-A6R">
+                                <rect key="frame" x="125" y="300" width="164" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="u3I-2o-fOh"/>
+                                    <constraint firstAttribute="width" constant="164" id="yOg-YV-iu9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <state key="normal" title="Level 1: Easy"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mnR-cw-cDw" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="Bg2-7l-7o6"/>
+                            <constraint firstItem="RJu-gW-BXe" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="G7L-tI-coH"/>
+                            <constraint firstItem="RJu-gW-BXe" firstAttribute="top" secondItem="6eT-xQ-MDz" secondAttribute="bottom" constant="73" id="YGl-JO-Pmv"/>
+                            <constraint firstItem="mnR-cw-cDw" firstAttribute="top" secondItem="2oR-zo-BZc" secondAttribute="bottom" constant="8" id="a1U-kx-5k9"/>
+                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="top" secondItem="LOU-PN-PAy" secondAttribute="top" constant="109" id="h0h-EA-BTt"/>
+                            <constraint firstItem="2oR-zo-BZc" firstAttribute="top" secondItem="SpL-EF-A6R" secondAttribute="bottom" constant="17" id="jWw-IC-3Ln"/>
+                            <constraint firstItem="SpL-EF-A6R" firstAttribute="top" secondItem="RJu-gW-BXe" secondAttribute="bottom" constant="17" id="krZ-UN-Sr7"/>
+                            <constraint firstItem="2oR-zo-BZc" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="ktH-j1-owT"/>
+                            <constraint firstItem="SpL-EF-A6R" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="mVv-2s-C3s"/>
+                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="pJP-iF-21E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vOW-Hp-mHh"/>
                     </view>
                     <navigationItem key="navigationItem" id="DWq-Pg-Qxu"/>

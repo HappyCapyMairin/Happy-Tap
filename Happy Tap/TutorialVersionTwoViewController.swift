@@ -30,7 +30,7 @@ class TutorialVersionTwoViewController: UIViewController {
             else {
                 print(self.tapCount)
                 self.timer.invalidate()
-                self.scoreDisplayLabel.text = "You got \(self.tapCount) in 10 seconds. Play again to beat your score!"
+                self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
                 self.countDownLabel.text = ""
             }
         }
@@ -39,6 +39,4 @@ class TutorialVersionTwoViewController: UIViewController {
     @IBAction func whenButtonIsTapped(_ sender: Any) {
         tapCount += 1
     }
-    
-    
 }

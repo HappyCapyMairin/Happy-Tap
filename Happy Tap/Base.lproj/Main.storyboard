@@ -15,45 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Happy Tap!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYo-bX-Kt4">
-                                <rect key="frame" x="-7" y="128" width="428" height="217"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Happy Tap!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYo-bX-Kt4">
+                                <rect key="frame" x="-3.5" y="41" width="421" height="211"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="428" id="Bcg-LW-mLS"/>
-                                    <constraint firstAttribute="height" constant="217" id="gBG-hN-dxH"/>
+                                    <constraint firstAttribute="width" constant="421" id="Nej-5O-j4N"/>
+                                    <constraint firstAttribute="height" constant="211" id="QkT-s2-wYi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="70"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="58"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Are you ready to find out how fast you can tap?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53r-08-q4g">
-                                <rect key="frame" x="33" y="494" width="348" height="232"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5og-JV-pH8">
+                                <rect key="frame" x="90" y="300" width="234" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="232" id="Efg-mG-zuY"/>
-                                    <constraint firstAttribute="width" constant="348" id="x7W-ev-23f"/>
+                                    <constraint firstAttribute="width" constant="234" id="WG7-kt-J4r"/>
+                                    <constraint firstAttribute="height" constant="83" id="mjO-O6-Bao"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5og-JV-pH8">
-                                <rect key="frame" x="90" y="413" width="234" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="37"/>
                                 <state key="normal" title="Start Game">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="xl7-EW-Ysa" kind="show" id="aRh-1T-dxO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to find out how fast you can tap?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53r-08-q4g">
+                                <rect key="frame" x="13" y="391" width="388" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="Yx5-6W-tQP"/>
+                                    <constraint firstAttribute="height" constant="241" id="ntX-pj-M8q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Q4-Iq-F5b"/>
-                            <constraint firstItem="53r-08-q4g" firstAttribute="top" secondItem="WYo-bX-Kt4" secondAttribute="bottom" constant="149" id="4pz-Em-Fu4"/>
-                            <constraint firstItem="53r-08-q4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FlK-Md-Obb"/>
-                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MwM-yB-zfa"/>
+                            <constraint firstItem="53r-08-q4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Am-wq-oqj"/>
+                            <constraint firstItem="5og-JV-pH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IAo-KG-U0j"/>
+                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h6I-do-jK6"/>
+                            <constraint firstItem="5og-JV-pH8" firstAttribute="top" secondItem="WYo-bX-Kt4" secondAttribute="bottom" constant="48" id="iXS-ok-JvW"/>
+                            <constraint firstItem="53r-08-q4g" firstAttribute="top" secondItem="5og-JV-pH8" secondAttribute="bottom" constant="8" id="p70-iA-7J4"/>
+                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="41" id="tPb-Z2-dIk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -105,7 +110,7 @@
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
-                                    <segue destination="lfs-nT-h6Z" kind="show" id="Nch-eX-61o"/>
+                                    <segue destination="c5N-TZ-V7Y" kind="show" id="ZwM-OV-mDw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-zo-BZc">
@@ -138,50 +143,177 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQU-Yp-oxx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="123"/>
+            <point key="canvasLocation" x="2028" y="123"/>
         </scene>
         <!--Tutorial View Controller-->
-        <scene sceneID="fGc-PQ-kpR">
+        <scene sceneID="9vp-Ma-6RG">
             <objects>
-                <viewController id="lfs-nT-h6Z" customClass="TutorialViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QAD-hs-W8b">
+                <viewController id="ixJ-av-QDI" customClass="TutorialViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cvN-an-Cid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86F-7Z-ZmB">
-                                <rect key="frame" x="81" y="125" width="252" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySn-WO-5IV">
+                                <rect key="frame" x="91" y="305" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="41"/>
-                                <state key="normal" title="Happy Tap"/>
+                                <connections>
+                                    <action selector="firstButtonIsPressed:" destination="ixJ-av-QDI" eventType="touchUpInside" id="uyv-Ye-7wQ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-ch-G4Y">
-                                <rect key="frame" x="126" y="517" width="111" height="76"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsj-NV-7sr">
+                                <rect key="frame" x="294" y="412" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <connections>
+                                    <action selector="secondButtonIsPressed:" destination="ixJ-av-QDI" eventType="touchUpInside" id="v3Q-fJ-bTn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-c4-Y0x">
+                                <rect key="frame" x="93" y="317" width="42" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTw-z5-jR5">
+                                <rect key="frame" x="301" y="408" width="28" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHK-J6-RBV">
+                                <rect key="frame" x="113" y="457" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faI-Mi-Pd5">
+                                <rect key="frame" x="113" y="452" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="thirdButtonIsPressed:" destination="ixJ-av-QDI" eventType="touchUpInside" id="eEL-DU-JnI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlS-P2-McR">
+                                <rect key="frame" x="226" y="213" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy7-4H-ZIl">
+                                <rect key="frame" x="294" y="572" width="28" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcT-iq-hZ4">
+                                <rect key="frame" x="226" y="208" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fourthButtonIsPressed:" destination="ixJ-av-QDI" eventType="touchUpInside" id="ExW-bO-OXe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrD-Yb-hdM">
+                                <rect key="frame" x="106" y="85" width="105" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0By-8L-tuL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FaH-ZX-Xq2"/>
+                    <connections>
+                        <outlet property="fifthLabelTextField" destination="zy7-4H-ZIl" id="pxc-MM-JIu"/>
+                        <outlet property="firstLabelTextField" destination="j3d-c4-Y0x" id="u5x-s0-HVw"/>
+                        <outlet property="fourthLabelTextField" destination="ZlS-P2-McR" id="k0q-tF-Ruw"/>
+                        <outlet property="labelDisplay" destination="wrD-Yb-hdM" id="hdk-xL-dGH"/>
+                        <outlet property="secondLabelTextField" destination="CTw-z5-jR5" id="SXC-vs-P0n"/>
+                        <outlet property="thirdLabelTextField" destination="KHK-J6-RBV" id="Mpk-yo-vXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eR4-AV-VAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2853.6231884057975" y="428.57142857142856"/>
+        </scene>
+        <!--Tutorial Version Two View Controller-->
+        <scene sceneID="9hy-zi-Iou">
+            <objects>
+                <viewController id="c5N-TZ-V7Y" customClass="TutorialVersionTwoViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PRy-LY-BrR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1P-lv-CIj">
+                                <rect key="frame" x="152" y="346" width="110" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="21f-r9-cda"/>
+                                    <constraint firstAttribute="height" constant="67" id="uBL-2y-NSy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="56"/>
                                 <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="whenButtonIsTapped:" destination="c5N-TZ-V7Y" eventType="touchUpInside" id="1El-83-Zxg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-gK-fTF">
-                                <rect key="frame" x="222" y="410" width="111" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Tap"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMb-zW-pZc">
-                                <rect key="frame" x="47" y="363" width="111" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Tap"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex4-N0-M4i">
+                                <rect key="frame" x="69.5" y="467" width="275" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="2pZ-bS-Ao1"/>
+                                    <constraint firstAttribute="height" constant="251" id="T7n-vi-dqt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="28"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button as many times as you can in 10 seconds!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G79-9w-saa">
+                                <rect key="frame" x="20" y="94" width="374" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="7v2-9F-frz"/>
+                                    <constraint firstAttribute="width" constant="374" id="n6g-Ob-Ro7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9L-yT-Osp">
+                                <rect key="frame" x="20" y="213" width="374" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="PAb-xh-q0H"/>
+                                    <constraint firstAttribute="width" constant="374" id="Sc1-05-zBi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="qZ6-Wp-oLZ"/>
+                        <constraints>
+                            <constraint firstItem="j9L-yT-Osp" firstAttribute="top" secondItem="G79-9w-saa" secondAttribute="bottom" constant="8" id="BY0-JK-QdR"/>
+                            <constraint firstItem="G79-9w-saa" firstAttribute="top" secondItem="PRy-LY-BrR" secondAttribute="top" constant="94" id="GVM-Jh-r2a"/>
+                            <constraint firstItem="ex4-N0-M4i" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="KG1-XN-pHc"/>
+                            <constraint firstItem="j9L-yT-Osp" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="Mzf-Dk-hay"/>
+                            <constraint firstItem="g1P-lv-CIj" firstAttribute="top" secondItem="j9L-yT-Osp" secondAttribute="bottom" constant="22" id="T6G-jR-aLX"/>
+                            <constraint firstItem="G79-9w-saa" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="i0e-ue-Int"/>
+                            <constraint firstItem="ex4-N0-M4i" firstAttribute="top" secondItem="g1P-lv-CIj" secondAttribute="bottom" constant="54" id="kAK-dE-T7e"/>
+                            <constraint firstItem="g1P-lv-CIj" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="mgc-Ih-6C3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kYS-DR-Omi"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dDi-tD-gUq"/>
+                    <navigationItem key="navigationItem" id="B84-DY-zwK"/>
+                    <connections>
+                        <outlet property="countDownLabel" destination="j9L-yT-Osp" id="asw-db-kH3"/>
+                        <outlet property="scoreDisplayLabel" destination="ex4-N0-M4i" id="P42-qA-qKF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XBs-FI-L78" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib7-TH-X3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2944.9275362318845" y="122.54464285714285"/>
+            <point key="canvasLocation" x="2853.6231884057975" y="-259.15178571428572"/>
         </scene>
     </scenes>
 </document>

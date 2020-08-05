@@ -14,8 +14,9 @@ class LevelZeroViewController: UIViewController {
     @IBOutlet weak var liveTapCountLabel: UILabel!
     
     var tapCount = 0
-    var countDown = 10
+    var countDown = 13
     var timer = Timer()
+    var canTap = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,28 +25,35 @@ class LevelZeroViewController: UIViewController {
     
     func runTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            print(self.countDown)
-            if self.countDown != 0 {
-                self.countDown -= 1
-                self.countDownLabel.text = String(self.countDown)
-            }
-            else {
+            switch self.countDown {
+            case 13:
+                self.countDownLabel.text = "Ready"
+            case 12:
+                self.countDownLabel.text = "Set"
+            case 11:
+                self.countDownLabel.text = "Go!"
+                self.canTap = true
+            case 0:
                 print(self.tapCount)
                 self.timer.invalidate()
                 self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
                 self.countDownLabel.text = ""
+            default:
+                self.countDownLabel.text = String(self.countDown)
             }
+            self.countDown -= 1
         }
     }
     
     @IBAction func whenButtonIsTapped(_ sender: Any) {
-        tapCount += 1
-        if self.countDown != 0 {
-            liveTapCountLabel.text = "Live tap count: \(tapCount)"
-        }
-        else {
-            liveTapCountLabel.text = ""
+        if canTap {
+            self.tapCount += 1
+            if countDown != 0 {
+                liveTapCountLabel.text = "Live tap count: \(self.tapCount)"
+            }
+            else {
+                self.liveTapCountLabel.text = ""
+            }
         }
     }
 }
-

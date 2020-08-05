@@ -8,9 +8,11 @@
 
 import UIKit
 
-class TutorialVersionTwoViewController: UIViewController {
+class LevelZeroViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var scoreDisplayLabel: UILabel!
+    @IBOutlet weak var liveTapCountLabel: UILabel!
+    
     var tapCount = 0
     var countDown = 10
     var timer = Timer()
@@ -38,5 +40,12 @@ class TutorialVersionTwoViewController: UIViewController {
     
     @IBAction func whenButtonIsTapped(_ sender: Any) {
         tapCount += 1
+        if self.countDown != 0 {
+            liveTapCountLabel.text = "Live tap count: \(tapCount)"
+        }
+        else {
+            liveTapCountLabel.text = ""
+        }
     }
 }
+

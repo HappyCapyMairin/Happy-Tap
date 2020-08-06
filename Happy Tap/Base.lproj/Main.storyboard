@@ -161,7 +161,7 @@
         <!--Second View Controller-->
         <scene sceneID="VBU-Ra-mJt">
             <objects>
-                <viewController id="xl7-EW-Ysa" customClass="SecondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xl7-EW-Ysa" customClass="secondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOU-PN-PAy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DWq-Pg-Qxu"/>
                     <connections>
-                        <outlet property="gifView" destination="Ftf-YI-p8X" id="vga-XL-r7y"/>
+                        <outlet property="gifView" destination="Ftf-YI-p8X" id="YRB-fV-Ncc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQU-Yp-oxx" sceneMemberID="firstResponder"/>

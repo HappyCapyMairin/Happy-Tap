@@ -7,19 +7,32 @@
 //
 
 import UIKit
+import AVFoundation //
 
-class SecondViewController: UIViewController {
-
+class secondViewController: UIViewController {
     @IBOutlet weak var gifView: UIImageView!
+    
+    var audioPlayerSecondVCButton = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         gifView.loadGif(name: "tappingGif")
-
-      
+        
+        let soundSecondVCButton = Bundle.main.path(forResource: "typewriterSoundStartButton", ofType: "mp3")
+        do {
+            audioPlayerSecondVCButton = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundSecondVCButton!))
+        }
+        catch {
+            print(error)
+        }
     }
     
-
-   
+    @IBAction func onLevel0ButtonTapped(_ sender: Any) {
+        audioPlayerSecondVCButton.play()
+    }
+    
+    @IBAction func onLevel1ButtonTapped(_ sender: Any) {
+        audioPlayerSecondVCButton.play()
+    }
+    
 }

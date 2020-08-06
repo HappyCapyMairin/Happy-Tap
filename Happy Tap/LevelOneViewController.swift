@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class levelOneViewController: UIViewController {
     @IBOutlet weak var levelOneCountDownLabel: UILabel!
@@ -17,12 +18,20 @@ class levelOneViewController: UIViewController {
     var levelOneCountDown = 20.00
     var levelOneTimer = Timer()
     var levelOneCanTapAndHearSound = false
+    var audioPlayerLevel1Button = AVAudioPlayer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         runLevelOneTimer()
         
+        let soundLevel1Button = Bundle.main.path(forResource: "soundForButton", ofType: "mp3")
+        do {
+            audioPlayerLevel1Button = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundLevel1Button!))
+        }
+        catch {
+            print(error)
+        }
     }
     
     func runLevelOneTimer() {
@@ -54,6 +63,7 @@ class levelOneViewController: UIViewController {
         if levelOneCanTapAndHearSound == true {
             self.levelOneTapCount += 1
             levelOneLiveTapCount.text = "Live Tap Count: \(self.levelOneTapCount)"
+            audioPlayerLevel1Button.play()
         }
     }
 }

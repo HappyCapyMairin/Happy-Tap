@@ -18,9 +18,11 @@ class levelOneViewController: UIViewController {
     var levelOneTimer = Timer()
     var levelOneCanTapAndHearSound = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         runLevelOneTimer()
+        
     }
     
     func runLevelOneTimer() {
@@ -33,12 +35,12 @@ class levelOneViewController: UIViewController {
                 self.levelOneCountDownLabel.text = "Set!"
                 self.levelOneCanTapAndHearSound = false
             case 17.01...18.00:
-                self.levelOneCountDownLabel.text = "Go!"
+                self.levelOneCountDownLabel.text = "Tap!"
                 self.levelOneCanTapAndHearSound = true
             case 0.00...0.99:
                 self.levelOneTimer.invalidate()
                 self.levelOneCanTapAndHearSound = false
-                self.levelOneScoreDisplayLabel.text = "You got \(self.levelOneTapCount) taps in 10 seconds. Play again to beat your score!"
+                self.levelOneScoreDisplayLabel.text = "You got \(self.levelOneTapCount) taps in 20 seconds. Play again to beat your score!"
                 self.levelOneCountDownLabel.text = ""
             default:
                 let levelOneCountDownStringTwoDecimals = String(format: "%.1f", self.levelOneCountDown)

@@ -43,7 +43,7 @@ class LevelZeroViewController: UIViewController {
                 self.countDownLabel.text = "Set!"
                 self.canTapAndHearSound = false
             case 10.01...11.00:
-                self.countDownLabel.text = "Go!"
+                self.countDownLabel.text = "Tap!"
                 self.canTapAndHearSound = true
             case 0.00...0.99:
                 self.timer.invalidate()

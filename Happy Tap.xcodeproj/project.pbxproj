@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C1DE5CB24D9AD56009611D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DE5CA24D9AD56009611D6 /* SecondViewController.swift */; };
 		3C48C19A24DC5DCB00866116 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48C19924DC5DCB00866116 /* Swift+Gif.swift */; };
+		3C48C19C24DC6F1E00866116 /* tappingGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C48C19B24DC6F1E00866116 /* tappingGif.gif */; };
 		3CBBCAE424DB0A1900E69A46 /* LevelZeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBCAE324DB0A1900E69A46 /* LevelZeroViewController.swift */; };
 		3CBBCAE624DB0B5B00E69A46 /* LevelOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBCAE524DB0B5B00E69A46 /* LevelOneViewController.swift */; };
 		3CCEB33D24D605CE00DBDE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB33C24D605CE00DBDE1B /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		3C1DE5CA24D9AD56009611D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3C48C19924DC5DCB00866116 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		3C48C19B24DC6F1E00866116 /* tappingGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tappingGif.gif; sourceTree = "<group>"; };
 		3CBBCAE324DB0A1900E69A46 /* LevelZeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelZeroViewController.swift; sourceTree = "<group>"; };
 		3CBBCAE524DB0B5B00E69A46 /* LevelOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOneViewController.swift; sourceTree = "<group>"; };
 		3CCEB33924D605CE00DBDE1B /* Happy Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				3CCEB34524D605D900DBDE1B /* Assets.xcassets */,
 				3CCEB34724D605D900DBDE1B /* LaunchScreen.storyboard */,
 				3CCEB34A24D605D900DBDE1B /* Info.plist */,
+				3C48C19B24DC6F1E00866116 /* tappingGif.gif */,
 			);
 			path = "Happy Tap";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				3CCEB34624D605D900DBDE1B /* Assets.xcassets in Resources */,
 				F067030C24DBAC1F00B363F5 /* soundForButton.mp3 in Resources */,
 				3CCEB34424D605CF00DBDE1B /* Main.storyboard in Resources */,
+				3C48C19C24DC6F1E00866116 /* tappingGif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

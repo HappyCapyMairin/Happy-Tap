@@ -27,9 +27,9 @@ class LevelZeroViewController: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             switch self.countDown {
             case 13:
-                self.countDownLabel.text = "Ready"
+                self.countDownLabel.text = "Ready!"
             case 12:
-                self.countDownLabel.text = "Set"
+                self.countDownLabel.text = "Set!"
             case 11:
                 self.countDownLabel.text = "Go!"
                 self.canTap = true

@@ -55,6 +55,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -92,6 +93,7 @@
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onStartGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGT-Ug-Z1H"/>
                                     <segue destination="xl7-EW-Ysa" kind="show" id="aRh-1T-dxO"/>
                                 </connections>
                             </button>
@@ -136,7 +138,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
         </scene>
@@ -161,7 +162,7 @@
         <!--Second View Controller-->
         <scene sceneID="VBU-Ra-mJt">
             <objects>
-                <viewController id="xl7-EW-Ysa" customClass="SecondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xl7-EW-Ysa" customClass="secondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOU-PN-PAy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +187,7 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
+                                    <action selector="onLevel0ButtonTapped:" destination="xl7-EW-Ysa" eventType="touchUpInside" id="TQ7-7P-Bjo"/>
                                     <segue destination="8FQ-EA-bA2" kind="show" id="Vue-Dx-mBm"/>
                                 </connections>
                             </button>
@@ -199,6 +201,7 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 1: Easy"/>
                                 <connections>
+                                    <action selector="onLevel1ButtonTapped:" destination="xl7-EW-Ysa" eventType="touchUpInside" id="v5M-IP-ENq"/>
                                     <segue destination="JYT-9j-Uhb" kind="show" id="M5u-dY-sQb"/>
                                 </connections>
                             </button>

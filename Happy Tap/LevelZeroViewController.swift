@@ -17,7 +17,7 @@ class LevelZeroViewController: UIViewController {
     var tapCount = 0
     var countDown = 13
     var timer = Timer()
-    var canTap = false
+    var canTapAndHearSound = false
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -42,12 +42,12 @@ class LevelZeroViewController: UIViewController {
                 self.countDownLabel.text = "Set!"
             case 11:
                 self.countDownLabel.text = "Go!"
-                self.canTap = true
+                self.canTapAndHearSound = true
             case 0:
                 print(self.tapCount)
                 self.timer.invalidate()
                 self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
-                self.canTap = false
+                self.canTapAndHearSound = false
                 self.countDownLabel.text = ""
             default:
                 self.countDownLabel.text = String(self.countDown)
@@ -57,7 +57,7 @@ class LevelZeroViewController: UIViewController {
     }
     
     @IBAction func whenButtonIsTapped(_ sender: Any) {
-        if canTap {
+        if canTapAndHearSound {
             self.tapCount += 1
             if countDown != 0 {
                 liveTapCountLabel.text = "Live Tap Count: \(self.tapCount)"

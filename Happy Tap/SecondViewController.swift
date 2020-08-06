@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVFoundation
+import AVFoundation //
 
 class secondViewController: UIViewController {
     @IBOutlet weak var gifView: UIImageView!

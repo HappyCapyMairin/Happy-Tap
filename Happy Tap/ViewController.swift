@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVFoundation
+import AVFoundation // AVFoundation is used to create sounds that will be emitted when buttons are pressed
 
 class ViewController: UIViewController {
     

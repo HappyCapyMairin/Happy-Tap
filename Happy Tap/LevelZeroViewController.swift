@@ -49,7 +49,7 @@ class LevelZeroViewController: UIViewController {
                 self.canTapAndHearSound = false
                 self.countDownLabel.text = ""
             default:
-                let countDownStringTwoDecimals = String(format: "%.2f", self.countDown)
+                let countDownStringTwoDecimals = String(format: "%.1f", self.countDown)
                 self.countDownLabel.text = String(countDownStringTwoDecimals)
                 self.canTapAndHearSound = true 
             }

@@ -15,30 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to play:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI3-p3-KEf">
-                                <rect key="frame" x="-7" y="30" width="421" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI3-p3-KEf">
+                                <rect key="frame" x="12" y="79" width="390" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="IqA-zI-F9f"/>
+                                    <constraint firstAttribute="width" constant="390" id="tQb-L4-QJU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="64"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSG-cY-ILL">
-                                <rect key="frame" x="13" y="234" width="388" height="429"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Simple! The goal of the game is to tap a button as fast as you can in a certain amount of time. Rank up and aim for that high score! Goodluck!</string>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSG-cY-ILL">
+                                <rect key="frame" x="12" y="255" width="390" height="387"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="387" id="6bO-0M-sBM"/>
+                                    <constraint firstAttribute="width" constant="390" id="iAQ-xD-dG6"/>
+                                </constraints>
+                                <string key="text">Simple! The goal of the game is to tap a button as fast as you can in a certain amount of time. Rank up and aim for that high score! Good luck!</string>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="40"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iI3-p3-KEf" firstAttribute="top" secondItem="KRq-qJ-9if" secondAttribute="top" constant="79" id="Goc-gd-TyM"/>
+                            <constraint firstItem="fSG-cY-ILL" firstAttribute="centerX" secondItem="KRq-qJ-9if" secondAttribute="centerX" id="XtA-M1-lcv"/>
+                            <constraint firstItem="iI3-p3-KEf" firstAttribute="centerX" secondItem="KRq-qJ-9if" secondAttribute="centerX" id="t1M-XW-XfH"/>
+                            <constraint firstItem="fSG-cY-ILL" firstAttribute="top" secondItem="iI3-p3-KEf" secondAttribute="bottom" constant="17" id="xLg-b8-50d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RAn-jr-AJ9"/>
                     </view>
                     <navigationItem key="navigationItem" id="dSJ-En-oKy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmO-mM-Zkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-605"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="-605.35714285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -49,31 +61,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Happy Tap!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYo-bX-Kt4">
-                                <rect key="frame" x="-3.5" y="41" width="421" height="211"/>
+                                <rect key="frame" x="-3.5" y="100" width="421" height="192"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="421" id="Nej-5O-j4N"/>
-                                    <constraint firstAttribute="height" constant="211" id="QkT-s2-wYi"/>
+                                    <constraint firstAttribute="height" constant="192" id="HvP-8Q-8dq"/>
+                                    <constraint firstAttribute="width" constant="421" id="r3i-JJ-P4P"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="58"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="65"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ovt-Is-qio">
-                                <rect key="frame" x="155" y="426" width="104" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="44"/>
-                                <state key="normal" title="How to play">
-                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to find out how fast you can tap?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53r-08-q4g">
+                                <rect key="frame" x="13" y="441" width="388" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="b1q-ao-Fho"/>
+                                    <constraint firstAttribute="height" constant="241" id="huX-xZ-du0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5og-JV-pH8">
-                                <rect key="frame" x="90" y="300" width="234" height="83"/>
+                                <rect key="frame" x="90" y="330" width="234" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="WG7-kt-J4r"/>
-                                    <constraint firstAttribute="height" constant="83" id="mjO-O6-Bao"/>
+                                    <constraint firstAttribute="height" constant="83" id="Hu9-Pn-iIO"/>
+                                    <constraint firstAttribute="width" constant="234" id="yA3-wC-ZgV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="44"/>
                                 <state key="normal" title="Start Game">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -81,25 +95,15 @@
                                     <segue destination="xl7-EW-Ysa" kind="show" id="aRh-1T-dxO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to find out how fast you can tap?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53r-08-q4g">
-                                <rect key="frame" x="13" y="391" width="388" height="241"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="388" id="Yx5-6W-tQP"/>
-                                    <constraint firstAttribute="height" constant="241" id="ntX-pj-M8q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="53r-08-q4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Am-wq-oqj"/>
-                            <constraint firstItem="5og-JV-pH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IAo-KG-U0j"/>
-                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h6I-do-jK6"/>
-                            <constraint firstItem="5og-JV-pH8" firstAttribute="top" secondItem="WYo-bX-Kt4" secondAttribute="bottom" constant="48" id="iXS-ok-JvW"/>
-                            <constraint firstItem="53r-08-q4g" firstAttribute="top" secondItem="5og-JV-pH8" secondAttribute="bottom" constant="8" id="p70-iA-7J4"/>
-                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="41" id="tPb-Z2-dIk"/>
+                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="4FU-mU-yZi"/>
+                            <constraint firstItem="5og-JV-pH8" firstAttribute="top" secondItem="WYo-bX-Kt4" secondAttribute="bottom" constant="38" id="8nX-EV-54q"/>
+                            <constraint firstItem="WYo-bX-Kt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMh-uV-dwQ"/>
+                            <constraint firstItem="53r-08-q4g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gk8-bM-uYr"/>
+                            <constraint firstItem="53r-08-q4g" firstAttribute="top" secondItem="5og-JV-pH8" secondAttribute="bottom" constant="28" id="h7l-78-1po"/>
+                            <constraint firstItem="5og-JV-pH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1F-2h-GyY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -120,7 +124,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oKq-jd-JHB">
                                 <rect key="frame" x="312" y="0.0" width="82" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="44"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="40"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -162,76 +166,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-xQ-MDz">
-                                <rect key="frame" x="13.5" y="109" width="387.5" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-xQ-MDz">
+                                <rect key="frame" x="13.5" y="120" width="387.5" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="387.5" id="Wwc-3T-dQJ"/>
-                                    <constraint firstAttribute="height" constant="64" id="mfc-cu-Uhu"/>
+                                    <constraint firstAttribute="height" constant="64" id="a0v-vu-EZd"/>
+                                    <constraint firstAttribute="width" constant="387.5" id="yp7-gK-ngW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="44"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJu-gW-BXe">
-                                <rect key="frame" x="84.5" y="246" width="245" height="37"/>
+                                <rect key="frame" x="73" y="270" width="268" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="9Cl-fj-aLs"/>
-                                    <constraint firstAttribute="width" constant="245" id="e0Q-ab-MUr"/>
+                                    <constraint firstAttribute="height" constant="54" id="djJ-6n-e1c"/>
+                                    <constraint firstAttribute="width" constant="268" id="qVM-c8-STj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
                                     <segue destination="c5N-TZ-V7Y" kind="show" id="ZwM-OV-mDw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-zo-BZc">
-                                <rect key="frame" x="107.5" y="354" width="199" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="nxV-Nm-pRG"/>
-                                    <constraint firstAttribute="height" constant="37" id="ofB-7g-1BK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
-                                <state key="normal" title="Level 2: Normal"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-cw-cDw">
-                                <rect key="frame" x="124" y="399" width="166" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="fpc-cg-aoB"/>
-                                    <constraint firstAttribute="width" constant="166" id="nGG-uU-fnY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
-                                <state key="normal" title="Level 3: Hard"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-EF-A6R">
-                                <rect key="frame" x="125" y="300" width="164" height="37"/>
+                                <rect key="frame" x="118" y="500" width="178" height="54"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="u3I-2o-fOh"/>
-                                    <constraint firstAttribute="width" constant="164" id="yOg-YV-iu9"/>
+                                    <constraint firstAttribute="height" constant="54" id="aQ9-zJ-SV7"/>
+                                    <constraint firstAttribute="width" constant="178" id="i87-td-5iR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 1: Easy"/>
                                 <connections>
                                     <segue destination="JYT-9j-Uhb" kind="show" id="M5u-dY-sQb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-Rp-Q8o">
+                                <rect key="frame" x="191" y="391" width="32" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="YkA-o8-Qc2"/>
+                                    <constraint firstAttribute="width" constant="32" id="oO4-vI-HrI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="mnR-cw-cDw" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="Bg2-7l-7o6"/>
-                            <constraint firstItem="RJu-gW-BXe" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="G7L-tI-coH"/>
-                            <constraint firstItem="RJu-gW-BXe" firstAttribute="top" secondItem="6eT-xQ-MDz" secondAttribute="bottom" constant="73" id="YGl-JO-Pmv"/>
-                            <constraint firstItem="mnR-cw-cDw" firstAttribute="top" secondItem="2oR-zo-BZc" secondAttribute="bottom" constant="8" id="a1U-kx-5k9"/>
-                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="top" secondItem="LOU-PN-PAy" secondAttribute="top" constant="109" id="h0h-EA-BTt"/>
-                            <constraint firstItem="2oR-zo-BZc" firstAttribute="top" secondItem="SpL-EF-A6R" secondAttribute="bottom" constant="17" id="jWw-IC-3Ln"/>
-                            <constraint firstItem="SpL-EF-A6R" firstAttribute="top" secondItem="RJu-gW-BXe" secondAttribute="bottom" constant="17" id="krZ-UN-Sr7"/>
-                            <constraint firstItem="2oR-zo-BZc" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="ktH-j1-owT"/>
-                            <constraint firstItem="SpL-EF-A6R" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="mVv-2s-C3s"/>
-                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="pJP-iF-21E"/>
+                            <constraint firstItem="SpL-EF-A6R" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="BRF-fu-Mr5"/>
+                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="Hex-dh-uul"/>
+                            <constraint firstItem="RJu-gW-BXe" firstAttribute="top" secondItem="6eT-xQ-MDz" secondAttribute="bottom" constant="86" id="Hjs-7K-mwz"/>
+                            <constraint firstItem="RJu-gW-BXe" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="NMA-x4-zTk"/>
+                            <constraint firstItem="YQs-Rp-Q8o" firstAttribute="centerX" secondItem="LOU-PN-PAy" secondAttribute="centerX" id="NMs-V9-UL8"/>
+                            <constraint firstItem="6eT-xQ-MDz" firstAttribute="top" secondItem="LOU-PN-PAy" secondAttribute="top" constant="120" id="UhH-Pq-dl3"/>
+                            <constraint firstItem="YQs-Rp-Q8o" firstAttribute="top" secondItem="RJu-gW-BXe" secondAttribute="bottom" constant="67" id="lPf-lG-V58"/>
+                            <constraint firstItem="SpL-EF-A6R" firstAttribute="top" secondItem="YQs-Rp-Q8o" secondAttribute="bottom" constant="67" id="xBe-BB-Hsi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vOW-Hp-mHh"/>
                     </view>
@@ -252,14 +244,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the moving buttons as many times as you can in 20 seconds. Good luck!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Po-yNe">
                                 <rect key="frame" x="18" y="80" width="378" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="28"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-7Q-AX2">
                                 <rect key="frame" x="68.5" y="204" width="277" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -310,8 +302,10 @@
                                     <constraint firstAttribute="width" constant="110" id="21f-r9-cda"/>
                                     <constraint firstAttribute="height" constant="67" id="uBL-2y-NSy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="56"/>
-                                <state key="normal" title="Tap"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="64"/>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="whenButtonIsTapped:" destination="c5N-TZ-V7Y" eventType="touchUpInside" id="1El-83-Zxg"/>
                                 </connections>
@@ -322,7 +316,7 @@
                                     <constraint firstAttribute="width" constant="275" id="2pZ-bS-Ao1"/>
                                     <constraint firstAttribute="height" constant="251" id="T7n-vi-dqt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="32"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -332,7 +326,7 @@
                                     <constraint firstAttribute="height" constant="111" id="7v2-9F-frz"/>
                                     <constraint firstAttribute="width" constant="374" id="n6g-Ob-Ro7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -342,14 +336,14 @@
                                     <constraint firstAttribute="height" constant="111" id="PAb-xh-q0H"/>
                                     <constraint firstAttribute="width" constant="374" id="Sc1-05-zBi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="54"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-vE-uGF">
                                 <rect key="frame" x="36" y="429" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -392,7 +386,7 @@
                                     <constraint firstAttribute="width" constant="110" id="EaQ-34-eB2"/>
                                     <constraint firstAttribute="height" constant="67" id="YV2-oJ-VqC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="56"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="66"/>
                                 <state key="normal" title="Tap"/>
                                 <connections>
                                     <action selector="whenButtonIsTapped:" destination="8FQ-EA-bA2" eventType="touchUpInside" id="e1G-vj-JY9"/>
@@ -404,7 +398,7 @@
                                     <constraint firstAttribute="height" constant="251" id="305-82-QIQ"/>
                                     <constraint firstAttribute="width" constant="275" id="TEf-lM-tbI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="32"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -414,7 +408,7 @@
                                     <constraint firstAttribute="height" constant="111" id="ZVe-P0-xXh"/>
                                     <constraint firstAttribute="width" constant="374" id="ydJ-bO-27I"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -424,7 +418,7 @@
                                     <constraint firstAttribute="width" constant="374" id="8Cb-UC-rRs"/>
                                     <constraint firstAttribute="height" constant="111" id="ydn-Ei-lsx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="53"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -434,7 +428,7 @@
                                     <constraint firstAttribute="width" constant="358" id="MG0-4l-kYN"/>
                                     <constraint firstAttribute="height" constant="33" id="tk3-xv-ilI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

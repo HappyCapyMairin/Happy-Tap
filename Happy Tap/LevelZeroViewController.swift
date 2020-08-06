@@ -51,7 +51,7 @@ class LevelZeroViewController: UIViewController {
             default:
                 let countDownStringTwoDecimals = String(format: "%.2f", self.countDown)
                 self.countDownLabel.text = String(countDownStringTwoDecimals)
-                self.canTapAndHearSound = true // is this considered repetitive?
+                self.canTapAndHearSound = true 
             }
             self.countDown -= 0.01
         }

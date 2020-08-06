@@ -15,7 +15,7 @@ class LevelZeroViewController: UIViewController {
     @IBOutlet weak var liveTapCountLabel: UILabel!
     
     var tapCount = 0
-    var countDown = 13
+    var countDown = 13.00
     var timer = Timer()
     var canTapAndHearSound = false
     var audioPlayer = AVAudioPlayer()
@@ -34,7 +34,7 @@ class LevelZeroViewController: UIViewController {
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.00, repeats: true) { timer in
             switch self.countDown {
             case 13:
                 self.countDownLabel.text = "Ready!"
@@ -52,7 +52,7 @@ class LevelZeroViewController: UIViewController {
             default:
                 self.countDownLabel.text = String(self.countDown)
             }
-            self.countDown -= 1
+            self.countDown -= 1.00
         }
     }
     

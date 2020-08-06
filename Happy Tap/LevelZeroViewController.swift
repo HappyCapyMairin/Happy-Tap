@@ -38,8 +38,10 @@ class LevelZeroViewController: UIViewController {
             switch self.countDown {
             case 12.01...13.00:
                 self.countDownLabel.text = "Ready!"
+                self.canTapAndHearSound = false
             case 11.01...12.00:
                 self.countDownLabel.text = "Set!"
+                self.canTapAndHearSound = false
             case 10.01...11.00:
                 self.countDownLabel.text = "Go!"
                 self.canTapAndHearSound = true

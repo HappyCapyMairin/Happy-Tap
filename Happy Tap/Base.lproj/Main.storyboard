@@ -55,7 +55,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -93,7 +92,6 @@
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onStartGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGT-Ug-Z1H"/>
                                     <segue destination="xl7-EW-Ysa" kind="show" id="aRh-1T-dxO"/>
                                 </connections>
                             </button>
@@ -138,6 +136,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
         </scene>
@@ -162,7 +161,7 @@
         <!--Second View Controller-->
         <scene sceneID="VBU-Ra-mJt">
             <objects>
-                <viewController id="xl7-EW-Ysa" customClass="secondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xl7-EW-Ysa" customClass="SecondViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOU-PN-PAy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +186,6 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
-                                    <action selector="onLevel0ButtonTapped:" destination="xl7-EW-Ysa" eventType="touchUpInside" id="TQ7-7P-Bjo"/>
                                     <segue destination="8FQ-EA-bA2" kind="show" id="Vue-Dx-mBm"/>
                                 </connections>
                             </button>
@@ -201,8 +199,7 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 1: Easy"/>
                                 <connections>
-                                    <action selector="onLevel1ButtonTapped:" destination="xl7-EW-Ysa" eventType="touchUpInside" id="v5M-IP-ENq"/>
-                                    <segue destination="JYT-9j-Uhb" kind="show" id="M5u-dY-sQb"/>
+                                    <segue destination="JYT-9j-Uhb" kind="show" id="kha-03-grZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-Rp-Q8o">
@@ -251,36 +248,48 @@
         <!--Level One View Controller-->
         <scene sceneID="Yh2-xo-H56">
             <objects>
-                <viewController id="JYT-9j-Uhb" customClass="LevelOneViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JYT-9j-Uhb" customClass="levelOneViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xJP-eV-1xr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the moving buttons as many times as you can in 20 seconds. Good luck!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Po-yNe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button 140 times in 30 seconds. Goodluck! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Po-yNe">
                                 <rect key="frame" x="18" y="80" width="378" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="qoR-F0-7jA"/>
+                                    <constraint firstAttribute="width" constant="378" id="vcM-5u-VMB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="28"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-7Q-AX2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-7Q-AX2" customClass="LevelOneViewContoller">
                                 <rect key="frame" x="68.5" y="204" width="277" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="fft-lM-G0f"/>
+                                    <constraint firstAttribute="height" constant="126" id="ojy-NO-0EC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="53"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-PT-HvQ">
-                                <rect key="frame" x="20" y="575" width="374" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-PT-HvQ" customClass="LevelOneViewController">
+                                <rect key="frame" x="20" y="501" width="374" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="TM4-Af-NTA"/>
+                                    <constraint firstAttribute="height" constant="204" id="lxx-Mg-JYz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="32"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvU-N8-84f">
-                                <rect key="frame" x="57" y="481" width="119" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvU-N8-84f">
+                                <rect key="frame" x="147.5" y="415" width="119" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="RyW-Ug-n9S"/>
+                                    <constraint firstAttribute="height" constant="67" id="Zi8-yR-R8Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="66"/>
                                 <state key="normal" title="Tap">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -288,13 +297,36 @@
                                     <action selector="whenLevelOneButtonIsTapped:" destination="JYT-9j-Uhb" eventType="touchUpInside" id="mDa-cY-k8L"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Tap Count: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlh-m1-GRT">
+                                <rect key="frame" x="63.5" y="490" width="287" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="Wfj-2R-qZf"/>
+                                    <constraint firstAttribute="height" constant="33" id="nDh-78-htd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ErJ-PT-HvQ" firstAttribute="top" secondItem="QvU-N8-84f" secondAttribute="bottom" constant="19" id="JCw-uY-y6L"/>
+                            <constraint firstItem="Fbl-7Q-AX2" firstAttribute="centerX" secondItem="xJP-eV-1xr" secondAttribute="centerX" id="Ndf-5L-KQ4"/>
+                            <constraint firstItem="QvU-N8-84f" firstAttribute="centerX" secondItem="xJP-eV-1xr" secondAttribute="centerX" id="T90-tg-4b2"/>
+                            <constraint firstItem="IGt-Po-yNe" firstAttribute="centerX" secondItem="xJP-eV-1xr" secondAttribute="centerX" id="f9u-14-dAa"/>
+                            <constraint firstItem="wlh-m1-GRT" firstAttribute="top" secondItem="QvU-N8-84f" secondAttribute="bottom" constant="8" id="oDp-eb-UAk"/>
+                            <constraint firstItem="ErJ-PT-HvQ" firstAttribute="centerX" secondItem="xJP-eV-1xr" secondAttribute="centerX" id="pmf-Mn-wvs"/>
+                            <constraint firstItem="IGt-Po-yNe" firstAttribute="top" secondItem="xJP-eV-1xr" secondAttribute="top" constant="80" id="tKB-Ej-eYT"/>
+                            <constraint firstItem="Fbl-7Q-AX2" firstAttribute="top" secondItem="IGt-Po-yNe" secondAttribute="bottom" constant="21" id="ubv-sD-6Ds"/>
+                            <constraint firstItem="QvU-N8-84f" firstAttribute="top" secondItem="Fbl-7Q-AX2" secondAttribute="bottom" constant="85" id="xQX-hD-guG"/>
+                            <constraint firstItem="wlh-m1-GRT" firstAttribute="centerX" secondItem="xJP-eV-1xr" secondAttribute="centerX" id="y0s-3t-IUf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="J26-tI-6rG"/>
                     </view>
                     <navigationItem key="navigationItem" id="gyI-pF-q2E"/>
                     <connections>
                         <outlet property="levelOneCountDownLabel" destination="Fbl-7Q-AX2" id="q1b-WH-VcP"/>
+                        <outlet property="levelOneLiveTapCount" destination="wlh-m1-GRT" id="VUZ-YP-8oR"/>
                         <outlet property="levelOneScoreDisplayLabel" destination="ErJ-PT-HvQ" id="cxH-pz-Tj6"/>
                     </connections>
                 </viewController>

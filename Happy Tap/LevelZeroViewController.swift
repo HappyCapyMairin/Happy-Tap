@@ -15,7 +15,7 @@ class LevelZeroViewController: UIViewController {
     @IBOutlet weak var liveTapCountLabel: UILabel!
     
     var tapCount = 0
-    var countDown = 13
+    var countDown = 13.00
     var timer = Timer()
     var canTapAndHearSound = false
     var audioPlayer = AVAudioPlayer()
@@ -34,38 +34,37 @@ class LevelZeroViewController: UIViewController {
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
             switch self.countDown {
-            case 13:
+            case 12.01...13.00:
                 self.countDownLabel.text = "Ready!"
-            case 12:
+            case 11.01...12.00:
                 self.countDownLabel.text = "Set!"
-            case 11:
+            case 10.01...11.00:
                 self.countDownLabel.text = "Go!"
                 self.canTapAndHearSound = true
-            case 0:
-                print(self.tapCount)
+            case 0.00...0.99:
                 self.timer.invalidate()
                 self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
                 self.canTapAndHearSound = false
                 self.countDownLabel.text = ""
             default:
-                self.countDownLabel.text = String(self.countDown)
+                let countDownStringTwoDecimals = String(format: "%.2f", self.countDown)
+                self.countDownLabel.text = String(countDownStringTwoDecimals)
+                self.canTapAndHearSound = true // is this considered repetitive?
             }
-            self.countDown -= 1
+            self.countDown -= 0.01
         }
     }
-    
     @IBAction func whenButtonIsTapped(_ sender: Any) {
-        if canTapAndHearSound {
+        if canTapAndHearSound == true {
             self.tapCount += 1
-            if countDown != 0 {
-                liveTapCountLabel.text = "Live Tap Count: \(self.tapCount)"
-                audioPlayer.play() //plays the sound!
-            }
-            else {
-                self.liveTapCountLabel.text = ""
-            }
+            liveTapCountLabel.text = "Live Tap Count: \(self.tapCount)"
+            audioPlayer.play() //plays the sound!
+        }
+        else {
+            self.liveTapCountLabel.text = ""
         }
     }
 }
+

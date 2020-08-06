@@ -186,7 +186,7 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="35"/>
                                 <state key="normal" title="Level 0: Super Easy"/>
                                 <connections>
-                                    <segue destination="c5N-TZ-V7Y" kind="show" id="ZwM-OV-mDw"/>
+                                    <segue destination="8FQ-EA-bA2" kind="show" id="Vue-Dx-mBm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-EF-A6R">
@@ -279,7 +279,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="gyI-pF-q2E"/>
                     <connections>
-                        <outlet property="LevelOneCountDownLabel" destination="Fbl-7Q-AX2" id="Tp1-hm-Zuv"/>
                         <outlet property="levelOneCountDownLabel" destination="Fbl-7Q-AX2" id="q1b-WH-VcP"/>
                         <outlet property="levelOneScoreDisplayLabel" destination="ErJ-PT-HvQ" id="cxH-pz-Tj6"/>
                     </connections>
@@ -289,93 +288,9 @@
             <point key="canvasLocation" x="2902.898550724638" y="421.875"/>
         </scene>
         <!--Level Zero View Controller-->
-        <scene sceneID="9hy-zi-Iou">
-            <objects>
-                <viewController id="c5N-TZ-V7Y" customClass="LevelZeroViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PRy-LY-BrR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1P-lv-CIj">
-                                <rect key="frame" x="152" y="346" width="110" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="21f-r9-cda"/>
-                                    <constraint firstAttribute="height" constant="67" id="uBL-2y-NSy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="64"/>
-                                <state key="normal" title="Tap">
-                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="whenButtonIsTapped:" destination="c5N-TZ-V7Y" eventType="touchUpInside" id="1El-83-Zxg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex4-N0-M4i">
-                                <rect key="frame" x="69.5" y="467" width="275" height="251"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="275" id="2pZ-bS-Ao1"/>
-                                    <constraint firstAttribute="height" constant="251" id="T7n-vi-dqt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="32"/>
-                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button as many times as you can in 10 seconds!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G79-9w-saa">
-                                <rect key="frame" x="20" y="94" width="374" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="7v2-9F-frz"/>
-                                    <constraint firstAttribute="width" constant="374" id="n6g-Ob-Ro7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
-                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9L-yT-Osp">
-                                <rect key="frame" x="20" y="213" width="374" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="PAb-xh-q0H"/>
-                                    <constraint firstAttribute="width" constant="374" id="Sc1-05-zBi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="54"/>
-                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-vE-uGF">
-                                <rect key="frame" x="36" y="429" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
-                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="j9L-yT-Osp" firstAttribute="top" secondItem="G79-9w-saa" secondAttribute="bottom" constant="8" id="BY0-JK-QdR"/>
-                            <constraint firstItem="G79-9w-saa" firstAttribute="top" secondItem="PRy-LY-BrR" secondAttribute="top" constant="94" id="GVM-Jh-r2a"/>
-                            <constraint firstItem="ex4-N0-M4i" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="KG1-XN-pHc"/>
-                            <constraint firstItem="j9L-yT-Osp" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="Mzf-Dk-hay"/>
-                            <constraint firstItem="g1P-lv-CIj" firstAttribute="top" secondItem="j9L-yT-Osp" secondAttribute="bottom" constant="22" id="T6G-jR-aLX"/>
-                            <constraint firstItem="G79-9w-saa" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="i0e-ue-Int"/>
-                            <constraint firstItem="ex4-N0-M4i" firstAttribute="top" secondItem="g1P-lv-CIj" secondAttribute="bottom" constant="54" id="kAK-dE-T7e"/>
-                            <constraint firstItem="g1P-lv-CIj" firstAttribute="centerX" secondItem="PRy-LY-BrR" secondAttribute="centerX" id="mgc-Ih-6C3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="kYS-DR-Omi"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="B84-DY-zwK"/>
-                    <connections>
-                        <outlet property="countDownLabel" destination="j9L-yT-Osp" id="asw-db-kH3"/>
-                        <outlet property="liveTapCountLabel" destination="0sa-vE-uGF" id="ou2-xH-fTD"/>
-                        <outlet property="scoreDisplayLabel" destination="ex4-N0-M4i" id="P42-qA-qKF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib7-TH-X3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2876.811594202899" y="-252.45535714285714"/>
-        </scene>
-        <!--Level Zero View Controller-->
         <scene sceneID="cpf-Dj-yIg">
             <objects>
-                <viewController id="8FQ-EA-bA2" customClass="LevelZeroViewController" sceneMemberID="viewController">
+                <viewController id="8FQ-EA-bA2" customClass="LevelZeroViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LbZ-fO-r4e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,8 +298,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-b3-WdR">
                                 <rect key="frame" x="152" y="346" width="110" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="EaQ-34-eB2"/>
-                                    <constraint firstAttribute="height" constant="67" id="YV2-oJ-VqC"/>
+                                    <constraint firstAttribute="height" constant="67" id="Fuu-Ts-mjS"/>
+                                    <constraint firstAttribute="width" constant="110" id="c1Y-eA-J1S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="66"/>
                                 <state key="normal" title="Tap"/>
@@ -395,8 +310,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Met-SJ-LiV">
                                 <rect key="frame" x="69.5" y="467" width="275" height="251"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="251" id="305-82-QIQ"/>
-                                    <constraint firstAttribute="width" constant="275" id="TEf-lM-tbI"/>
+                                    <constraint firstAttribute="height" constant="251" id="g7G-js-alO"/>
+                                    <constraint firstAttribute="width" constant="275" id="oS2-ZT-Hlu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="32"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,28 +320,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button as many times as you can in 10 seconds!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7f-sa-MN8">
                                 <rect key="frame" x="20" y="94" width="374" height="111"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="ZVe-P0-xXh"/>
-                                    <constraint firstAttribute="width" constant="374" id="ydJ-bO-27I"/>
+                                    <constraint firstAttribute="width" constant="374" id="39h-X0-J7r"/>
+                                    <constraint firstAttribute="height" constant="111" id="DZd-6w-zu4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-4a-y4o">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k3-4a-y4o">
                                 <rect key="frame" x="20" y="213" width="374" height="111"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="8Cb-UC-rRs"/>
-                                    <constraint firstAttribute="height" constant="111" id="ydn-Ei-lsx"/>
+                                    <constraint firstAttribute="height" constant="111" id="bG2-6I-RQz"/>
+                                    <constraint firstAttribute="width" constant="374" id="yQB-Am-Taw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="53"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niC-Wy-Vjw">
-                                <rect key="frame" x="28" y="421" width="358" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niC-Wy-Vjw">
+                                <rect key="frame" x="85" y="421" width="244" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="358" id="MG0-4l-kYN"/>
-                                    <constraint firstAttribute="height" constant="33" id="tk3-xv-ilI"/>
+                                    <constraint firstAttribute="height" constant="33" id="m0m-Ah-tb7"/>
+                                    <constraint firstAttribute="width" constant="244" id="zfY-k8-qsP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -435,16 +350,16 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tk2-b3-WdR" firstAttribute="top" secondItem="4k3-4a-y4o" secondAttribute="bottom" constant="22" id="CQX-EY-jZh"/>
-                            <constraint firstItem="niC-Wy-Vjw" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="MqZ-Ct-HTu"/>
-                            <constraint firstItem="F7f-sa-MN8" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="TGL-og-Eqs"/>
-                            <constraint firstItem="F7f-sa-MN8" firstAttribute="top" secondItem="LbZ-fO-r4e" secondAttribute="top" constant="94" id="Xd8-Su-f0D"/>
-                            <constraint firstItem="Tk2-b3-WdR" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="mk4-OV-JSd"/>
-                            <constraint firstItem="Met-SJ-LiV" firstAttribute="top" secondItem="Tk2-b3-WdR" secondAttribute="bottom" constant="54" id="nNW-wo-jGr"/>
-                            <constraint firstItem="4k3-4a-y4o" firstAttribute="top" secondItem="F7f-sa-MN8" secondAttribute="bottom" constant="8" id="oz6-ph-jGe"/>
-                            <constraint firstItem="niC-Wy-Vjw" firstAttribute="top" secondItem="Tk2-b3-WdR" secondAttribute="bottom" constant="5" id="tPA-7Y-WmP"/>
-                            <constraint firstItem="Met-SJ-LiV" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="u13-dB-J0e"/>
-                            <constraint firstItem="4k3-4a-y4o" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="yb3-Zl-oAn"/>
+                            <constraint firstItem="Met-SJ-LiV" firstAttribute="top" secondItem="Tk2-b3-WdR" secondAttribute="bottom" constant="54" id="2Oe-RF-QXC"/>
+                            <constraint firstItem="Tk2-b3-WdR" firstAttribute="top" secondItem="4k3-4a-y4o" secondAttribute="bottom" constant="22" id="6gU-af-FRx"/>
+                            <constraint firstItem="Met-SJ-LiV" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="QlP-xM-5xJ"/>
+                            <constraint firstItem="4k3-4a-y4o" firstAttribute="top" secondItem="F7f-sa-MN8" secondAttribute="bottom" constant="8" id="R80-gy-P1I"/>
+                            <constraint firstItem="niC-Wy-Vjw" firstAttribute="top" secondItem="Tk2-b3-WdR" secondAttribute="bottom" constant="8" id="VXN-36-G7h"/>
+                            <constraint firstItem="Tk2-b3-WdR" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="WVN-JO-FOw"/>
+                            <constraint firstItem="4k3-4a-y4o" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="XAh-Jl-i5R"/>
+                            <constraint firstItem="F7f-sa-MN8" firstAttribute="top" secondItem="LbZ-fO-r4e" secondAttribute="top" constant="94" id="YP0-Eq-qy5"/>
+                            <constraint firstItem="niC-Wy-Vjw" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="kDa-Qf-YXX"/>
+                            <constraint firstItem="F7f-sa-MN8" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="mzI-0J-nhT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SXc-EE-qoy"/>
                     </view>
@@ -457,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yF6-jB-Xbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876.811594202899" y="-252.45535714285714"/>
+            <point key="canvasLocation" x="3511.594202898551" y="-252.45535714285714"/>
         </scene>
     </scenes>
 </document>

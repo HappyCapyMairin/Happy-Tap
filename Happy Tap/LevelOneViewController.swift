@@ -8,37 +8,50 @@
 
 import UIKit
 
-class LevelOneViewController: UIViewController {
+class levelOneViewController: UIViewController {
     @IBOutlet weak var levelOneCountDownLabel: UILabel!
     @IBOutlet weak var levelOneScoreDisplayLabel: UILabel!
+    @IBOutlet weak var levelOneLiveTapCount: UILabel!
     
     var levelOneTapCount = 0
-    var levelOneCountDown = 10
+    var levelOneCountDown = 20.00
     var levelOneTimer = Timer()
+    var levelOneCanTapAndHearSound = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        runTimer()
+        runLevelOneTimer()
     }
     
-    func runTimer() {
-        levelOneTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            print(self.levelOneCountDown)
-            if self.levelOneCountDown != 0 {
-                self.levelOneCountDown -= 1
-                self.levelOneCountDownLabel.text = String(self.levelOneCountDown)
-            }
-            else {
-                print(self.levelOneTapCount)
+    func runLevelOneTimer() {
+        levelOneTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+            switch self.levelOneCountDown {
+            case 19.01...20.00:
+                self.levelOneCountDownLabel.text = "Ready!"
+                self.levelOneCanTapAndHearSound = false
+            case 18.01...19.00:
+                self.levelOneCountDownLabel.text = "Set!"
+                self.levelOneCanTapAndHearSound = false
+            case 17.01...18.00:
+                self.levelOneCountDownLabel.text = "Go!"
+                self.levelOneCanTapAndHearSound = true
+            case 0.00...0.99:
                 self.levelOneTimer.invalidate()
-                self.levelOneScoreDisplayLabel.text = "You got \(self.levelOneTapCount) taps in 20 seconds. Play again to beat your score!"
+                self.levelOneCanTapAndHearSound = false
+                self.levelOneScoreDisplayLabel.text = "You got \(self.levelOneTapCount) taps in 10 seconds. Play again to beat your score!"
                 self.levelOneCountDownLabel.text = ""
+            default:
+                let levelOneCountDownStringTwoDecimals = String(format: "%.1f", self.levelOneCountDown)
+                self.levelOneCountDownLabel.text = String(levelOneCountDownStringTwoDecimals)
+                self.levelOneCanTapAndHearSound = true
             }
-            
+            self.levelOneCountDown -= 0.01
         }
     }
-    
     @IBAction func whenLevelOneButtonIsTapped(_ sender: Any) {
-        levelOneTapCount += 1
+        if levelOneCanTapAndHearSound == true {
+            self.levelOneTapCount += 1
+            levelOneLiveTapCount.text = "Live Tap Count: \(self.levelOneTapCount)"
+        }
     }
 }

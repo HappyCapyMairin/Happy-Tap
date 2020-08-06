@@ -54,6 +54,12 @@ class levelOneViewController: UIViewController {
                 self.levelOneCanTapAndHearSound = false
                 self.levelOneScoreDisplayLabel.text = "You got \(self.levelOneTapCount) taps in 20 seconds. Play again to beat your score!"
                 self.levelOneCountDownLabel.text = ""
+                if self.levelOneTapCount >= 140 {
+                    self.displayWinningMessage(message: "You won!")
+                    if self.levelOneTapCount < 140 {
+                        self.displayWinningMessage(message: "You failed :(")
+                    }
+                }
             default:
                 let levelOneCountDownStringTwoDecimals = String(format: "%.1f", self.levelOneCountDown)
                 self.levelOneCountDownLabel.text = String(levelOneCountDownStringTwoDecimals)

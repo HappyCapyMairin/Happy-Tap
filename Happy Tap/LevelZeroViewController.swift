@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class LevelZeroViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
@@ -17,10 +18,19 @@ class LevelZeroViewController: UIViewController {
     var countDown = 13
     var timer = Timer()
     var canTap = false
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         runTimer()
+        
+        let sound = Bundle.main.path(forResource: "soundForButton", ofType: "mp3")
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }
+        catch {
+            print(error)
+        }
     }
     
     func runTimer() {
@@ -51,6 +61,7 @@ class LevelZeroViewController: UIViewController {
             self.tapCount += 1
             if countDown != 0 {
                 liveTapCountLabel.text = "Live Tap Count: \(self.tapCount)"
+                audioPlayer.play() //plays the sound!
             }
             else {
                 self.liveTapCountLabel.text = ""

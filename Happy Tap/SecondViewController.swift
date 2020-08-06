@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gifView.loadGif(name: <#T##String#>)
+        gifView.loadGif(name: "tappingGif")
 
       
     }

@@ -19,6 +19,7 @@ class levelOneViewController: UIViewController {
     var levelOneTimer = Timer()
     var levelOneCanTapAndHearSound = false
     var audioPlayerLevel1Button = AVAudioPlayer()
+    var gameOver = false
     
     
     override func viewDidLoad() {
@@ -33,7 +34,9 @@ class levelOneViewController: UIViewController {
             print(error)
         }
     }
-    
+    // goal: make it into a fail/ win game
+    // win if you get over 140 taps in 20 sec
+    // fail if you don't and hti the reset try again button
     func runLevelOneTimer() {
         levelOneTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
             switch self.levelOneCountDown {
@@ -59,6 +62,24 @@ class levelOneViewController: UIViewController {
             self.levelOneCountDown -= 0.01
         }
     }
+    func resetGame() {
+        levelOneCountDown = 20.00
+        levelOneTapCount = 0
+        levelOneCanTapAndHearSound = false
+        gameOver = false
+        self.levelOneScoreDisplayLabel.text = ""
+    }
+
+    func displayWinningMessage(message: String) {
+    let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+    let alertAction = UIAlertAction(title: "Reset", style: .default) {
+        (action) in self.resetGame()
+    }
+    alert.addAction(alertAction)
+    present(alert, animated: true, completion: nil)
+    gameOver = true
+    }
+        
     @IBAction func whenLevelOneButtonIsTapped(_ sender: Any) {
         if levelOneCanTapAndHearSound == true {
             self.levelOneTapCount += 1

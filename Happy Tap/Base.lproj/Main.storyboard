@@ -394,6 +394,26 @@
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBW-gO-DUw">
+                                <rect key="frame" x="175" y="194" width="64" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Ml7-FS-wkb"/>
+                                    <constraint firstAttribute="height" constant="35" id="ir3-Df-BAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkV-Pn-p5X">
+                                <rect key="frame" x="175" y="196" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7E6-Cc-ALd"/>
+                                    <constraint firstAttribute="width" constant="64" id="tBl-YI-Mdq"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onResetButtonTapped:" destination="8FQ-EA-bA2" eventType="touchUpInside" id="Lqv-yw-Dsl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -401,10 +421,14 @@
                             <constraint firstItem="Tk2-b3-WdR" firstAttribute="top" secondItem="4k3-4a-y4o" secondAttribute="bottom" constant="22" id="6gU-af-FRx"/>
                             <constraint firstItem="Met-SJ-LiV" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="QlP-xM-5xJ"/>
                             <constraint firstItem="4k3-4a-y4o" firstAttribute="top" secondItem="F7f-sa-MN8" secondAttribute="bottom" constant="8" id="R80-gy-P1I"/>
+                            <constraint firstItem="bkV-Pn-p5X" firstAttribute="top" secondItem="SXc-EE-qoy" secondAttribute="top" constant="56" id="VVJ-Ox-lBD"/>
                             <constraint firstItem="niC-Wy-Vjw" firstAttribute="top" secondItem="Tk2-b3-WdR" secondAttribute="bottom" constant="8" id="VXN-36-G7h"/>
                             <constraint firstItem="Tk2-b3-WdR" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="WVN-JO-FOw"/>
                             <constraint firstItem="4k3-4a-y4o" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="XAh-Jl-i5R"/>
                             <constraint firstItem="F7f-sa-MN8" firstAttribute="top" secondItem="LbZ-fO-r4e" secondAttribute="top" constant="94" id="YP0-Eq-qy5"/>
+                            <constraint firstItem="fBW-gO-DUw" firstAttribute="top" secondItem="SXc-EE-qoy" secondAttribute="top" constant="54" id="a0R-gG-Ahp"/>
+                            <constraint firstItem="fBW-gO-DUw" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="d8X-uy-gQZ"/>
+                            <constraint firstItem="bkV-Pn-p5X" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="hHK-K2-K8a"/>
                             <constraint firstItem="niC-Wy-Vjw" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="kDa-Qf-YXX"/>
                             <constraint firstItem="F7f-sa-MN8" firstAttribute="centerX" secondItem="LbZ-fO-r4e" secondAttribute="centerX" id="mzI-0J-nhT"/>
                         </constraints>
@@ -412,6 +436,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="d4O-ak-sCq"/>
                     <connections>
+                        <outlet property="ButtonResetLabel" destination="fBW-gO-DUw" id="hnd-Yi-rA8"/>
                         <outlet property="countDownLabel" destination="4k3-4a-y4o" id="67d-rk-Rxq"/>
                         <outlet property="liveTapCountLabel" destination="niC-Wy-Vjw" id="4x7-54-aho"/>
                         <outlet property="scoreDisplayLabel" destination="Met-SJ-LiV" id="6LX-KW-cjm"/>

@@ -13,11 +13,13 @@ class LevelZeroViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var scoreDisplayLabel: UILabel!
     @IBOutlet weak var liveTapCountLabel: UILabel!
+    @IBOutlet weak var ButtonResetLabel: UILabel!
     
     var tapCount = 0
     var countDown = 13.00
     var timer = Timer()
     var canTapAndHearSound = false
+   // var gameOver = false
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -31,6 +33,14 @@ class LevelZeroViewController: UIViewController {
         catch {
             print(error)
         }
+    }
+    
+    func resetGame() {
+        countDown = 13.00
+        tapCount = 0
+        canTapAndHearSound = false
+        self.scoreDisplayLabel.text = ""
+        runTimer()
     }
     
     func runTimer() {
@@ -50,6 +60,7 @@ class LevelZeroViewController: UIViewController {
                 self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
                 self.canTapAndHearSound = false
                 self.countDownLabel.text = ""
+                self.ButtonResetLabel.text = "Reset"
             default:
                 let countDownStringTwoDecimals = String(format: "%.1f", self.countDown)
                 self.countDownLabel.text = String(countDownStringTwoDecimals)
@@ -66,6 +77,12 @@ class LevelZeroViewController: UIViewController {
         }
         else {
             self.liveTapCountLabel.text = ""
+        }
+    }
+    
+    @IBAction func onResetButtonTapped(_ sender: Any) {
+        if canTapAndHearSound == false {
+            resetGame()
         }
     }
 }

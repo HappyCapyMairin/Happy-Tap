@@ -37,8 +37,8 @@ class LevelZeroViewController: UIViewController {
                 print(self.tapCount)
                 self.timer.invalidate()
                 self.scoreDisplayLabel.text = "You got \(self.tapCount) taps in 10 seconds. Play again to beat your score!"
-                self.countDownLabel.text = ""
                 self.canTap = false
+                self.countDownLabel.text = ""
             default:
                 self.countDownLabel.text = String(self.countDown)
             }
@@ -50,7 +50,7 @@ class LevelZeroViewController: UIViewController {
         if canTap {
             self.tapCount += 1
             if countDown != 0 {
-                liveTapCountLabel.text = "Live tap count: \(self.tapCount)"
+                liveTapCountLabel.text = "Live Tap Count: \(self.tapCount)"
             }
             else {
                 self.liveTapCountLabel.text = ""

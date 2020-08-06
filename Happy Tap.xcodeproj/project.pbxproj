@@ -18,6 +18,7 @@
 		3CCEB34924D605D900DBDE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCEB34724D605D900DBDE1B /* LaunchScreen.storyboard */; };
 		3CCEB35424D605DA00DBDE1B /* Happy_TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB35324D605DA00DBDE1B /* Happy_TapTests.swift */; };
 		3CCEB35F24D605DA00DBDE1B /* Happy_TapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEB35E24D605DA00DBDE1B /* Happy_TapUITests.swift */; };
+		F067030C24DBAC1F00B363F5 /* soundForButton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F067030B24DBAC1F00B363F5 /* soundForButton.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3CCEB35A24D605DA00DBDE1B /* Happy TapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy TapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCEB35E24D605DA00DBDE1B /* Happy_TapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_TapUITests.swift; sourceTree = "<group>"; };
 		3CCEB36024D605DA00DBDE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F067030B24DBAC1F00B363F5 /* soundForButton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundForButton.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3CCEB35224D605DA00DBDE1B /* Happy TapTests */,
 				3CCEB35D24D605DA00DBDE1B /* Happy TapUITests */,
 				3CCEB33A24D605CE00DBDE1B /* Products */,
+				F067030B24DBAC1F00B363F5 /* soundForButton.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,6 +246,7 @@
 			files = (
 				3CCEB34924D605D900DBDE1B /* LaunchScreen.storyboard in Resources */,
 				3CCEB34624D605D900DBDE1B /* Assets.xcassets in Resources */,
+				F067030C24DBAC1F00B363F5 /* soundForButton.mp3 in Resources */,
 				3CCEB34424D605CF00DBDE1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

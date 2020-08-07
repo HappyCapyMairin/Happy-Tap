@@ -120,6 +120,12 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Qv6-Ll-Qll">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="trophyTap" id="rHy-zf-b84">
+                            <inset key="imageInsets" minX="-75" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <segue destination="41K-vn-gcp" kind="show" id="let-ZY-MKf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="PKH-Tr-7BY">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oKq-jd-JHB">
                                 <rect key="frame" x="312" y="0.0" width="82" height="44"/>
@@ -446,5 +452,24 @@
             </objects>
             <point key="canvasLocation" x="3511.594202898551" y="-252.45535714285714"/>
         </scene>
+        <!--High Score View Controller-->
+        <scene sceneID="WIB-IF-Z57">
+            <objects>
+                <viewController id="41K-vn-gcp" customClass="HighScoreViewController" customModule="Happy_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuL-be-aAy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6fc-9H-sK4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Xj-gz-VtW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWC-RS-bRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="-605"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="trophyTap" width="320" height="413"/>
+    </resources>
 </document>
